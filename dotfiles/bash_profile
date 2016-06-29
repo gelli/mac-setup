@@ -4,8 +4,16 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
  . $(brew --prefix)/etc/bash_completion
 fi
 
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+  colorflag="--color"
+else # OS X `ls`
+  colorflag="-G"
+fi
+
+# Always use color output for `ls`
+alias ls="command ls ${colorflag}"
 alias mvn="mvn -T2C"
-alias ls="ls -G"
 
 export EDITOR=vim
 export HOMEBREW_GITHUB_API_TOKEN=changeme
