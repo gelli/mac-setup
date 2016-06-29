@@ -21,8 +21,28 @@ First thing you need to do, on any OS actually, is update the system! For that: 
 - Accessibility > Mouse & Trackpad > Trackpad Options.. > Enable Dragging (with drag lock)
 - Sharing > Computer's Name > change!
 
+## Finder
+- Preferences > General > Show Items > Connected Servers
+- Preferences > Sidebar > Movies, Pictures, Home Folder > Check
+- Preferences > Sidebar > Devices > This device > Check
+
+
 ## Install App Cleaner
 Download and install AppCleaner from https://freemacsoft.net/appcleaner/
+
+## Install Applications
+- Dropbox from https://www.dropbox.com
+- Adobe Acrobat Reader DC from https://get.adobe.com/de/reader/
+
+## App Center
+
+
+### SouceTree
+- Download from https://www.sourcetreeapp.com
+- Login with existing Atlassian credentials to register installation
+
+### IntelliJ Idea
+- Download from http://www.jetbrains.com/idea/
 
 ## Install Hack font
 Download and install Hack font from http://sourcefoundry.org/hack/
@@ -40,10 +60,10 @@ Download and install Hack font from http://sourcefoundry.org/hack/
 ## Run git
 First run will trigger Xcode command line tools being installed
 
-$ git config --global user.name "Your Name Here"
-$ git config --global user.email "your_email@youremail.com"
+    $ git config --global user.name "Your Name Here"
+    $ git config --global user.email "your_email@youremail.com"
 
-$ git config --global credential.helper osxkeychain
+    $ git config --global credential.helper osxkeychain
 
 ## Homebrew
 - Install homebrew with command from http://brew.sh
@@ -56,5 +76,27 @@ $ git config --global credential.helper osxkeychain
 ## bash_profile
 ln -sf dotfiles/bash_profile ~/.bash_profile
 
+### autoenv
+    $ brew install autoenv
+
 ## Atom
-Download Atom from https://atom.io
+Download and install Atom from https://atom.io
+
+    $ mkdir ~/.atom
+    $ ln -sf dotfiles/atom/config.cson ~/.atom/config.cson
+
+## Python
+Let's install an own python to keep the system python untouched
+
+    $ brew install python
+
+Running `$ which python` should output `/usr/local/bin/python`.
+
+Update pip and it's dependency distribute
+
+    $ pip install --upgrade distribute
+    $ pip install --upgrade pip
+
+### VirtualEnv
+
+    $ pip install virtualenv
