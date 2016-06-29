@@ -19,12 +19,24 @@ First thing you need to do, on any OS actually, is update the system! For that: 
 - Security & Privacy > Firewall > Turn On Firewall
 - Date & Time > Clock > Show date
 - Accessibility > Mouse & Trackpad > Trackpad Options.. > Enable Dragging (with drag lock)
+- Sharing > Computer's Name > change!
 
 
 ## iTerm2
-Download iTerm2 from https://www.iterm2.com
-Start > Options > Keep in Dock
-Copy config from dotfiles/iterm to ~/.iterm
+- Download iTerm2 from https://www.iterm2.com
+- Start > Options > Keep in Dock
+- Copy config from dotfiles/iterm to ~/.iterm
+- Preferences > General > Load preferences from custom folder > ~/.iterm/
+- Restart
+
+
+## Run git
+To trigger Xcode command line tools being installed
 
 ## Homebrew
-Install homebrew with command from http://brew.sh
+- Install homebrew with command from http://brew.sh
+- Run brew analytics off
+- Run brew doctor after installation completed
+
+## LiquidPrompt
+- Run brew install liquidprompt

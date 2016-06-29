@@ -1,0 +1,17 @@
+export PATH=~/bin:$PATH
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+ . $(brew --prefix)/etc/bash_completion
+fi
+
+alias mvn="mvn -T2C"
+alias ls="ls -G"
+
+export EDITOR=vim
+export HOMEBREW_GITHUB_API_TOKEN=changeme
+
+if [ -f /usr/local/share/liquidprompt ]; then
+  . /usr/local/share/liquidprompt
+fi
+
+source /usr/local/opt/autoenv/activate.sh
