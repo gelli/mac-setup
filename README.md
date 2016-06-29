@@ -20,6 +20,12 @@ First thing you need to do, on any OS actually, is update the system! For that: 
 - Date & Time > Clock > Show date
 - Accessibility > Mouse & Trackpad > Trackpad Options.. > Enable Dragging (with drag lock)
 - Sharing > Computer's Name > change!
+- Bluethooth > Show Bluetooth in menu bar > check
+- Energy Saver > Show battery status in menu bar > check
+
+## Keychain Access
+- Preferences > Show keychain status in menu bar > check
+
 
 ## Finder
 - Preferences > General > Show Items > Connected Servers
@@ -35,6 +41,12 @@ Download and install AppCleaner from https://freemacsoft.net/appcleaner/
 - Adobe Acrobat Reader DC from https://get.adobe.com/de/reader/
 
 ## App Center
+- Pixelmator
+- Dash
+- Together3
+- Things
+- Xcode
+- The Unarchiver
 
 
 ### SouceTree
@@ -43,6 +55,7 @@ Download and install AppCleaner from https://freemacsoft.net/appcleaner/
 
 ### IntelliJ Idea
 - Download from http://www.jetbrains.com/idea/
+- Register with existing JetBrains account
 
 ## Install Hack font
 Download and install Hack font from http://sourcefoundry.org/hack/
