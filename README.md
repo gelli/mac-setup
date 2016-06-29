@@ -21,6 +21,14 @@ First thing you need to do, on any OS actually, is update the system! For that: 
 - Accessibility > Mouse & Trackpad > Trackpad Options.. > Enable Dragging (with drag lock)
 - Sharing > Computer's Name > change!
 
+## Install App Cleaner
+Download and install AppCleaner from https://freemacsoft.net/appcleaner/
+
+## Install Hack font
+Download and install Hack font from http://sourcefoundry.org/hack/
+
+- Preferences > Smart Delete > On
+- Preferences > Updates > Check automatically
 
 ## iTerm2
 - Download iTerm2 from https://www.iterm2.com
@@ -29,9 +37,13 @@ First thing you need to do, on any OS actually, is update the system! For that: 
 - Preferences > General > Load preferences from custom folder > ~/.iterm/
 - Restart
 
-
 ## Run git
-To trigger Xcode command line tools being installed
+First run will trigger Xcode command line tools being installed
+
+$ git config --global user.name "Your Name Here"
+$ git config --global user.email "your_email@youremail.com"
+
+$ git config --global credential.helper osxkeychain
 
 ## Homebrew
 - Install homebrew with command from http://brew.sh
@@ -40,3 +52,9 @@ To trigger Xcode command line tools being installed
 
 ## LiquidPrompt
 - Run brew install liquidprompt
+
+## bash_profile
+ln -sf dotfiles/bash_profile ~/.bash_profile
+
+## Atom
+Download Atom from https://atom.io

@@ -1,0 +1,13 @@
+"*":
+  core: {}
+  editor:
+    fontFamily: "Hack"
+    fontSize: 12
+    invisibles: {}
+    tabType: "soft"
+  "exception-reporting":
+    userId: "c91d63fc-159c-0c8a-253e-f817ee205600"
+  welcome:
+    showOnStartup: false
+  'linter-python-pep8':
+    'pep8DirToExecutable': '/usr/local/bin/'
