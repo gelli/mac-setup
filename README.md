@@ -19,9 +19,42 @@ First thing you need to do, on any OS actually, is update the system! For that: 
 - Date & Time > Clock > Show date
 - Accessibility > Mouse & Trackpad > Trackpad Options.. > Enable Dragging (with drag lock)
 - Sharing > Computer's Name > change!
+- Bluethooth > Show Bluetooth in menu bar > check
+- Energy Saver > Show battery status in menu bar > check
+
+## Keychain Access
+- Preferences > Show keychain status in menu bar > check
+
+
+## Finder
+- Preferences > General > Show Items > Connected Servers
+- Preferences > Sidebar > Movies, Pictures, Home Folder > Check
+- Preferences > Sidebar > Devices > This device > Check
+
 
 ## Install App Cleaner
 Download and install AppCleaner from https://freemacsoft.net/appcleaner/
+
+## Install Applications
+- Dropbox from https://www.dropbox.com
+- Adobe Acrobat Reader DC from https://get.adobe.com/de/reader/
+
+## App Center
+- Pixelmator
+- Dash
+- Together3
+- Things
+- Xcode
+- The Unarchiver
+
+
+### SouceTree
+- Download from https://www.sourcetreeapp.com
+- Login with existing Atlassian credentials to register installation
+
+### IntelliJ Idea
+- Download from http://www.jetbrains.com/idea/
+- Register with existing JetBrains account
 
 ## Install Hack font
 Download and install Hack font from http://sourcefoundry.org/hack/
@@ -39,10 +72,10 @@ Download and install Hack font from http://sourcefoundry.org/hack/
 ## Run git
 First run will trigger Xcode command line tools being installed
 
-$ git config --global user.name "Your Name Here"
-$ git config --global user.email "your_email@youremail.com"
+    $ git config --global user.name "Your Name Here"
+    $ git config --global user.email "your_email@youremail.com"
 
-$ git config --global credential.helper osxkeychain
+    $ git config --global credential.helper osxkeychain
 
 ## Homebrew
 - Install homebrew with command from http://brew.sh
@@ -51,7 +84,6 @@ $ git config --global credential.helper osxkeychain
 
 ### Brew Packages
 - wget
-- python3
 
 ## LiquidPrompt
 - Run brew install liquidprompt
@@ -59,8 +91,26 @@ $ git config --global credential.helper osxkeychain
 ## bash_profile
 ln -sf dotfiles/bash_profile ~/.bash_profile
 
-## Atom
-Download Atom from https://atom.io
+### autoenv
+    $ brew install autoenv
 
-### python packages
-- pip3 install virtualenvwrapper
+## Atom
+Download and install Atom from https://atom.io
+
+    $ mkdir ~/.atom
+    $ ln -sf dotfiles/atom/config.cson ~/.atom/config.cson
+
+## Python
+Let's install an own python to keep the system python untouched
+
+    $ brew install python3
+
+Running `$ which python3` should output `/usr/local/bin/python3`.
+
+Update pip and it's dependency distribute
+
+    $ pip3 install --upgrade pip
+
+### VirtualEnv
+
+    $ pip3 install virtualenv virtualenvwrapper
