@@ -2,7 +2,6 @@
 
 My Mac Setup step by step
 
-
 ## System Update
 First thing you need to do, on any OS actually, is update the system! For that: **Apple Icon > App Store > Updates**
 
@@ -50,6 +49,10 @@ $ git config --global credential.helper osxkeychain
 - Run brew analytics off
 - Run brew doctor after installation completed
 
+### Brew Packages
+- wget
+- python3
+
 ## LiquidPrompt
 - Run brew install liquidprompt
 
@@ -58,3 +61,6 @@ ln -sf dotfiles/bash_profile ~/.bash_profile
 
 ## Atom
 Download Atom from https://atom.io
+
+### python packages
+- pip3 install virtualenvwrapper

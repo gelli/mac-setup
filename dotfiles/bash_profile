@@ -1,7 +1,7 @@
-export PATH=~/bin:$PATH
+export PATH=/usr/local/sbin:~/bin:$PATH
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
- . $(brew --prefix)/etc/bash_completion
+  . $(brew --prefix)/etc/bash_completion
 fi
 
 # Detect which `ls` flavor is in use
@@ -16,10 +16,17 @@ alias ls="command ls ${colorflag}"
 alias mvn="mvn -T2C"
 
 export EDITOR=vim
-export HOMEBREW_GITHUB_API_TOKEN=changeme
+export HOMEBREW_GITHUB_API_TOKEN=`cat ~/.githubtoken`
 
 if [ -f /usr/local/share/liquidprompt ]; then
   . /usr/local/share/liquidprompt
 fi
 
 source /usr/local/opt/autoenv/activate.sh
+
+export PATH="$HOME/.yarn/bin:$PATH"
+
+# python3
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
