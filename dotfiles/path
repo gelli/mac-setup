@@ -1,0 +1,10 @@
+# Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
+PATH=/usr/local/sbin:/usr/local/bin:$HOME/bin:$PATH
+
+# Add gocode bin folder
+PATH=$HOME/gocode/bin:$PATH
+
+# Yarn
+PATH=$HOME/.yarn/bin:$PATH
+
+export PATH
