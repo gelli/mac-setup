@@ -6,6 +6,9 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done
 unset file
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # Load bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
@@ -14,5 +17,10 @@ fi
 # Enable python3 virtualenvwrapper
 source /usr/local/bin/virtualenvwrapper.sh
 
-# Enable autoenv
-source /usr/local/opt/autoenv/activate.sh
+# Init pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+# Init direnv
+eval "$(direnv hook bash)"
