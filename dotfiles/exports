@@ -9,3 +9,6 @@ export EDITOR=vim
 
 # github
 export HOMEBREW_GITHUB_API_TOKEN=`cat ~/.githubtoken`
+
+# gopass
+export GPG_TTY=$(tty)
