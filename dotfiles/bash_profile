@@ -21,3 +21,5 @@ fi
 
 # Init direnv
 eval "$(direnv hook bash)"
+
+export PATH="$HOME/.cargo/bin:$PATH"
