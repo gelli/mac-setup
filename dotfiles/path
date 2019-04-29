@@ -4,5 +4,7 @@ PATH=/usr/local/sbin:/usr/local/bin:$HOME/.local/bin:$PATH
 # Add gocode bin folder
 PATH=$HOME/gocode/bin:$PATH
 
+# Rust path
+PATH="$HOME/.cargo/bin:$PATH"
 
 export PATH
