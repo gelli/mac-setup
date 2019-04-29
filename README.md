@@ -94,12 +94,6 @@ ln -sf dotfiles/bash_profile ~/.bash_profile
 ### autoenv
     $ brew install autoenv
 
-## Atom
-Download and install Atom from https://atom.io
-
-    $ mkdir ~/.atom
-    $ ln -sf dotfiles/atom/config.cson ~/.atom/config.cson
-
 ## Python
 Let's install an own python to keep the system python untouched
 
