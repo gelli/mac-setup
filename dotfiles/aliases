@@ -18,3 +18,5 @@ alias lsd='ls -l | grep "^d"'
 alias ls="command ls ${colorflag}"
 
 alias mvn="mvn -T2C"
+alias plps="git fetch && git rebase origin/master && git push"
+alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say flushed'

@@ -1,0 +1,18 @@
+# Init pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+# Init direnv
+eval "$(direnv hook zsh)"
+
+# pyenv virtual env wrapper
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+export WORKON_HOME=$HOME/.virtualenvs
+pyenv virtualenvwrapper_lazy
+
+# nodenv
+eval "$(nodenv init -)"
+
+# jenv
+eval "$(jenv init -)"
