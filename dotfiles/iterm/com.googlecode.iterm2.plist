@@ -331,7 +331,7 @@
 	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
 	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuUTAjQGjA
 	AAAAAAAI0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiJylYTlNP
-	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0BzsAAAAAAA0iUmNzhe
+	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0B0oAAAAAAA0iUmNzhe
 	TlNNdXRhYmxlQXJyYXmjNzkpV05TQXJyYXkACAARABoAJAApADIANwBJAEwAUgBUAGMA
 	aQBuAHkAgACDAIUAhwCJAJAAmACcAJ4AoACiAKYAqACqAKwArgC5AL8AxgDIANEA0gDX
 	AOIA6wD4APsBBAELAQ8BEQETARUBGQEbAR0BHwEhASMBLAExAUABRAAAAAAAAAIBAAAA
@@ -365,9 +365,9 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>215 210 937 512 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1756 149 1495 923 -1920 120 1920 1057 </string>
+	<string>-1446 269 1166 867 -1920 120 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-1650 235 1005 867 -1920 120 1920 1057 </string>
+	<string>-1650 151 1390 951 -1920 120 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>-1654 215 1005 867 -1920 120 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_4A2B9E51-77E5-45CE-8B68-CADAA8A97E23</key>
@@ -1841,6 +1841,7 @@
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.4beta1</string>
+		<string>3.3.9beta1</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -1870,7 +1871,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>589107437.17797399</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>34</integer>
+	<integer>38</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2776,9 +2777,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-29T09:27:41Z</date>
+	<date>2020-02-10T09:31:39Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>2340894847</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2834,6 +2837,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.8beta5</string>
+	<string>3.3.9beta1</string>
 </dict>
 </plist>
