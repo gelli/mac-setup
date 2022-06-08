@@ -10,6 +10,16 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Load bash completion
+export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
-# export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
+
+# Init pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+eval "$(jenv init -)"
+
+# Init direnv
+eval "$(direnv hook bash)"

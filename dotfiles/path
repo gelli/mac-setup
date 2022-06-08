@@ -7,4 +7,7 @@ PATH=$HOME/gocode/bin:$PATH
 # Rust path
 PATH="$HOME/.cargo/bin:$PATH"
 
+# jenv
+PATH="$HOME/.jenv/bin:$PATH"
+
 export PATH
